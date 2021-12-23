@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./theme.scss";
+@import "./colors.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: $white;
+  color: $black;
+}
+
+h1 {
+  font-family: "Charm", cursive;
+  font-size: 5rem;
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: #b4b4b4;
+  }
+}
