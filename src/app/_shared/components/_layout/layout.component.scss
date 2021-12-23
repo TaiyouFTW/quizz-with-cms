@@ -1,0 +1,54 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.list-width {
+    width: 240px;
+}
+.is-mobile .toolbar {
+    position: fixed;
+    z-index: 2;
+}
+
+.sidenav-container {
+    flex: 1;
+}
+
+.is-mobile .sidenav-container {
+    flex: 1 0 auto;
+}
+
+.mat-drawer-container {
+    background: inherit;
+}
+
+.mat-list-item {
+    font-weight: 500;
+}
+
+a.mat-list-item {
+    padding: 0 0 0 3px;
+}
+
+.mat-list-item:hover {
+    padding: 0;
+    color: red;
+    border-left: 3px solid red;
+}
+.mat-list-item:hover.selected-item {
+    color: white;
+}
+
+.selected-item {
+    color: red !important;
+}
+
+.mat-list-base {
+    padding-top: 0;
+}
