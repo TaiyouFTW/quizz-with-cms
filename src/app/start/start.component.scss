@@ -4,5 +4,7 @@ section.container {
 
 .card {
     height: 500px;
-    background: url("./../../assets/layered-waves-haikei2.svg") no-repeat top center;
+    background: url("./../../assets/layered-waves-haikei2.svg") no-repeat center center;
+    border: none;
+    border-radius: 0;
 }
