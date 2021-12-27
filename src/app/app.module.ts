@@ -13,9 +13,10 @@ import { LayoutComponent } from './_shared/components/_layout/layout.component';
 import { StartComponent } from './start/start.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from "./_shared/modules/material.module";
+import { WavesComponent } from './_shared/components/waves/waves.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, StartComponent],
+  declarations: [AppComponent, LayoutComponent, StartComponent, WavesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,74 @@
+svg {
+    width: 100%;
+    overflow: visible;
+}
+
+div {
+    height: 95px;
+}
+
+.wave {
+    animation: wave 4s linear;
+    animation-iteration-count: infinite;
+    fill: #ffc107;
+}
+.drop {
+    fill: #ffd740;
+    animation: drop 3.2s linear infinite normal;
+    stroke: #ffd740;
+    stroke-width: 0.5;
+    transform: translateY(25px);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+}
+.drop2 {
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+.drop3 {
+    animation-delay: -2s;
+    animation-duration: 3.4s;
+}
+.drop4 {
+    animation-delay: 1.7s;
+}
+.drop5 {
+    animation-delay: 2.7s;
+    animation-duration: 3.1s;
+}
+.drop6 {
+    animation-delay: -2.1s;
+    animation-duration: 3.2s;
+}
+
+#wave2 {
+    animation-duration: 5s;
+    fill: #ffa700;
+}
+#wave3 {
+    animation-duration: 7s;
+    animation-direction: reverse;
+    fill: #ffb400;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(25px);
+    }
+    30% {
+        transform: translateY(-10px) scale(0.1);
+    }
+    30.001% {
+        transform: translateY(25px) scale(1);
+    }
+    70% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(-10px) scale(0.1);
+    }
+}
+@keyframes wave {
+    to {
+        transform: translateX(-100%);
+    }
+}
